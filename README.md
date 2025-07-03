@@ -449,25 +449,6 @@
   <!-- YouTube Player API -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
-    let player;
-    let isPlaying = false;
-
-    // Create sparks effect
-    function createSparks() {
-      const sparksContainer = document.getElementById('sparks');
-      const sparkCount = 30;
-      
-      for (let i = 0; i < sparkCount; i++) {
-        const spark = document.createElement('div');
-        spark.className = 'spark';
-        spark.style.left = Math.random() * 100 + '%';
-        spark.style.animationDelay = Math.random() * 3 + 's';
-        spark.style.animationDuration = (Math.random() * 2 + 2) + 's';
-        spark.style.opacity = Math.random() * 0.8 + 0.2;
-        sparksContainer.appendChild(spark);
-      }
-    }
-
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '100%',
@@ -548,15 +529,6 @@
       }
     }
 
-    // Initialize effects
-    document.addEventListener('DOMContentLoaded', function() {
-      // Create more sparks periodically
-      setInterval(() => {
-        if (Math.random() < 0.3) {
-          createSparks();
-        }
-      }, 5000);
-    });
   </script>
 </body>
 </html>
