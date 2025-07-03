@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jayden's 21st 🎉</title>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Creepster&family=Nosifer&family=Butcherman&display=swap');
+   
     
+   @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Creepster&family=Nosifer&family=Butcherman&display=swap');
+  
     * {
       box-sizing: border-box;
     }
